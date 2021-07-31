@@ -1,0 +1,23 @@
+{
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "node-pg-migrate",
+    "migrate-up": "set DATABASE_URL=postgres://postgres:password@localhost:5432/socialnetwork&&npm run migrate up",
+    "migrate-down": "set DATABASE_URL=postgres://postgres:password@localhost:5432/socialnetwork&&npm run migrate down",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-pg-migrate": "^5.10.0",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1"
+  }
+}
